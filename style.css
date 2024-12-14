@@ -75,7 +75,7 @@ main {
 
 .gallery-item img {
   width: max(250px, 50vw);
-  height: auto;
+  height: max 150px;
   border-bottom: 1px solid #ddd;
   margin-bottom: 0.5rem;
 }
