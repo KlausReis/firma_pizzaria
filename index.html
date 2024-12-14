@@ -1,105 +1,302 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Treinamento - Equipe da Pizzaria</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Cabeçalho -->
-  <header>
-    <h1>Treinamento para Equipe de Rodízio de Pizzaria</h1>
-    <p>Organização, Procedimentos e Otimização</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treinamento - Equipe da Pizzaria</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <h1>Treinamento para Equipe de Rodízio de Pizzaria</h1>
+      <p>Organização, Procedimentos e Otimização</p>
+    </header>
 
-  <!-- Menu de Navegação -->
-  <nav>
-    <ul>
-      <li><a href="#recepcao" onclick="highlightSection('recepcao')">Recepção</a></li>
-      <li><a href="#garcons" onclick="highlightSection('garcons')">Garçons</a></li>
-      <li><a href="#maitre" onclick="highlightSection('maitre')">Maitre</a></li>
-      <li><a href="#passadores" onclick="highlightSection('passadores')">Passadores</a></li>
-      <li><a href="#gerencia" onclick="highlightSection('gerencia')">Gerência</a></li>
-      <li><a href="#cozinha" onclick="highlightSection('cozinha')">Cozinha</a></li>
-      <li><a href="#logistica" onclick="highlightSection('logistica')">Logística</a></li>
-    </ul>
-  </nav>
-
-  <!-- Conteúdo Principal -->
-  <main>
-    <section id="recepcao" class="section">
-      <h2>Recepção</h2>
-      <p><strong>Objetivo:</strong> Organizar a chegada dos clientes e gerenciar a fila de espera.</p>
+    <!-- Menu de Navegação -->
+    <nav>
       <ul>
-        <li>Receber clientes com simpatia.</li>
-        <li>Organizar lista de espera e reservas.</li>
-        <li>Explicar o funcionamento do rodízio.</li>
+        <li>
+          <a href="#recepcao" onclick="highlightSection('recepcao')"
+            >Recepção</a
+          >
+        </li>
+        <li>
+          <a href="#garcons" onclick="highlightSection('garcons')">Garçons</a>
+        </li>
+        <li>
+          <a href="#maitre" onclick="highlightSection('maitre')">Maitre</a>
+        </li>
+        <li>
+          <a href="#passadores" onclick="highlightSection('passadores')"
+            >Passadores</a
+          >
+        </li>
+        <li>
+          <a href="#gerencia" onclick="highlightSection('gerencia')"
+            >Gerência</a
+          >
+        </li>
+        <li>
+          <a href="#cozinha" onclick="highlightSection('cozinha')">Cozinha</a>
+        </li>
+        <li>
+          <a href="#logistica" onclick="highlightSection('logistica')"
+            >Logística</a
+          >
+        </li>
+        <li>
+          <a href="#procedimentos" onclick="highlightSection('procedimentos')"
+            >Procedimentos</a
+          >
+        </li>
       </ul>
-    </section>
+    </nav>
 
-    <section id="garcons" class="section">
-      <h2>Garçons</h2>
-      <p><strong>Objetivo:</strong> Atendimento rápido, eficiente e cordial.</p>
-      <ul>
-        <li>Anotar pedidos extras como bebidas.</li>
-        <li>Recolher pratos vazios.</li>
-        <li>Oferecer bebidas e reposições.</li>
-      </ul>
-    </section>
+    <!-- Conteúdo Principal -->
+    <main>
+      <section id="recepcao" class="section">
+        <h2>Recepção</h2>
+        <p>
+          <strong>Objetivo:</strong> Organizar a chegada dos clientes e
+          gerenciar a fila de espera.
+        </p>
+        <ul>
+          <li>Receber clientes com simpatia.</li>
+          <li>Organizar lista de espera e reservas.</li>
+          <li>Explicar o funcionamento do rodízio.</li>
+        </ul>
+      </section>
 
-    <section id="maitre" class="section">
-      <h2>Maitre</h2>
-      <p><strong>Objetivo:</strong> Supervisionar o salão e coordenar a equipe.</p>
-      <ul>
-        <li>Distribuir tarefas entre garçons.</li>
-        <li>Gerenciar o fluxo de mesas.</li>
-      </ul>
-    </section>
+      <section id="garcons" class="section">
+        <h2>Garçons</h2>
+        <p>
+          <strong>Objetivo:</strong> Atendimento rápido, eficiente e cordial.
+        </p>
+        <ul>
+          <li>Anotar pedidos extras como bebidas.</li>
+          <li>Recolher pratos vazios.</li>
+          <li>Oferecer bebidas e reposições.</li>
+        </ul>
+      </section>
 
-    <section id="passadores" class="section">
-      <h2>Passadores de Pizza</h2>
-      <p><strong>Objetivo:</strong> Oferecer pizzas organizadamente.</p>
-      <ul>
-        <li>Oferecer pizzas variadas.</li>
-        <li>Consultar clientes sobre preferências.</li>
-      </ul>
-    </section>
+      <section id="maitre" class="section">
+        <h2>Maitre</h2>
+        <p>
+          <strong>Objetivo:</strong> Supervisionar o salão e coordenar a equipe.
+        </p>
+        <ul>
+          <li>Distribuir tarefas entre garçons.</li>
+          <li>Gerenciar o fluxo de mesas.</li>
+        </ul>
+      </section>
 
-    <section id="gerencia" class="section">
-      <h2>Gerência</h2>
-      <p><strong>Objetivo:</strong> Garantir eficiência e controle de custos.</p>
-      <ul>
-        <li>Monitorar desperdícios e otimizar estoque.</li>
-        <li>Organizar escalas de trabalho.</li>
-      </ul>
-    </section>
+      <section id="passadores" class="section">
+        <h2>Passadores de Pizza</h2>
+        <p><strong>Objetivo:</strong> Oferecer pizzas organizadamente.</p>
+        <ul>
+          <li>Oferecer pizzas variadas.</li>
+          <li>Consultar clientes sobre preferências.</li>
+        </ul>
+      </section>
 
-    <section id="cozinha" class="section">
-      <h2>Cozinha</h2>
-      <p><strong>Objetivo:</strong> Produzir pizzas de qualidade.</p>
-      <ul>
-        <li>Manter padrão de qualidade.</li>
-        <li>Gerenciar tempo de preparo.</li>
-      </ul>
-    </section>
+      <section id="gerencia" class="section">
+        <h2>Gerência</h2>
+        <p>
+          <strong>Objetivo:</strong> Garantir eficiência e controle de custos.
+        </p>
+        <ul>
+          <li>Monitorar desperdícios e otimizar estoque.</li>
+          <li>Organizar escalas de trabalho.</li>
+        </ul>
+      </section>
 
-    <section id="logistica" class="section">
-      <h2>Logística</h2>
-      <p><strong>Objetivo:</strong> Gerenciar materiais e disposição do salão.</p>
-      <ul>
-        <li>Garantir utensílios disponíveis.</li>
-        <li>Organizar estoque e fluxo de insumos.</li>
-      </ul>
-    </section>
-  </main>
+      <section id="cozinha" class="section">
+        <h2>Cozinha</h2>
+        <p><strong>Objetivo:</strong> Produzir pizzas de qualidade.</p>
+        <ul>
+          <li>Manter padrão de qualidade.</li>
+          <li>Gerenciar tempo de preparo.</li>
+        </ul>
+      </section>
 
-  <!-- Rodapé -->
-  <footer>
-    <p>&copy; 2024 - Treinamento para Equipe de Pizzaria</p>
-  </footer>
+      <section id="logistica" class="section">
+        <h2>Logística</h2>
+        <p>
+          <strong>Objetivo:</strong> Gerenciar materiais e disposição do salão.
+        </p>
+        <ul>
+          <li>Garantir utensílios disponíveis.</li>
+          <li>Organizar estoque e fluxo de insumos.</li>
+        </ul>
+      </section>
 
-  <!-- JavaScript -->
-  <script src="script.js"></script>
-</body>
+      <section id="procedimentos" class="section">
+        <h2>Procedimentos Importantes</h2>
+        <p>
+          Veja abaixo os procedimentos visuais e explicativos para melhorar a
+          apresentação e atendimento:
+        </p>
+
+        <!-- Galeria de Imagens com Procedimentos -->
+        <div class="gallery">
+          <div class="gallery-item">
+            <a href="https://www.deliway.com.br/blog/regras-de-etiqueta">
+              <img
+                src="./assets/regras-de-etiqueta.jpg"
+                alt="Regras de Talheres"
+              />
+            </a>
+            <p>
+              <strong>Regras de Talheres:</strong> Talheres devem ser dispostos
+              conforme padrões de etiqueta. Os talheres sujos nunca devem
+              encostar na mesa diretamente.
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <a
+              href="https://tasselo.com.br/conheca-os-principais-tipos-de-servicos-a-mesa-para-adotar-em-seu-restaurante"
+            >
+              <img
+                src="https://tasselo.com.br/wp-content/uploads/2020/11/tasselo_blog_nov_06-11-1.jpg"
+                alt="Formas de Servir"
+              />
+            </a>
+            <p>
+              <strong>Formas de Servir:</strong> Pratos devem ser servidos pelo
+              lado esquerdo do cliente e recolhidos pelo lado direito.
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <a
+              href="https://www.abrahao.com.br/blog/cardapio/apresentacao-de-pratos"
+            >
+              <img
+                src="https://i.pinimg.com/736x/ac/32/86/ac32860986342d52843c0f9e129480ae.jpg"
+                alt="Apresentação de Pratos"
+              />
+            </a>
+            <p>
+              <strong>Apresentação de Pratos:</strong> Pizzas e pratos devem ser
+              servidos limpos, organizados e visualmente atraentes.
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <a
+              href="https://cursa.app/pt/pagina/como-servir-alimentos-e-bebidas-corretamente"
+              ><img
+                src="https://cursa-json-routes.s3.amazonaws.com/texts/byId/1000478/imgs/10.jpg"
+                alt="Apresentação de Bebidas"
+              />
+            </a>
+            <p>
+              <strong>Como Servir Bebidas:</strong> Copos e garrafas devem ser
+              entregues com segurança, segurando pela base.
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <a
+              href="https://cursos.escolaeducacao.com.br/artigo/finalizando-os-servi-os"
+            >
+              <img
+                src="https://static.vecteezy.com/ti/fotos-gratis/p2/11326289-garcom-limpando-a-mesa-com-spray-desinfetante-em-um-restaurante-foto.JPG"
+                alt="Limpeza da Mesa"
+              />
+            </a>
+            <p>
+              <strong>Limpeza da Mesa:</strong> Retirar pratos sujos com
+              cuidado, sem causar desconforto ao cliente presente. A mesa deve
+              ser limpa rapidamente e reorganizada para os próximos clientes.
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <a
+              href="https://www.unileverfoodsolutions.com.br/dicas-e-servicos/tendencias-no-prato/apresentacao-pratos.html"
+            >
+              <img
+                src="https://www.unileverfoodsolutions.com.br/dicas-e-servicos/tendencias-no-prato/apresentacao-pratos/_jcr_content/parsys/content/image_2067282512.img.png/1637887947438.png"
+                alt="Fidelizando o Cliente"
+              />
+            </a>
+            <p>
+              <strong>Fidelizando o Cliente: </strong> 7 estratégias para
+              valorizar a sua receita e cativar os clientes.
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <a
+              href="https://uruatapera.com/existe-um-erro-de-etiqueta-que-quase-todos-os-restaurantes-atualmente-cometem-voce-sabe-qual/"
+            >
+              <img
+                src="https://blog.consumer.com.br/wp-content/uploads/2020/10/atendimento-por-mesas-Comanda-Mobile.jpg"
+                alt="Troca de Clientes"
+              />
+            </a>
+            <p>
+              <strong>Troca de Clientes:</strong> EVITE ERROS na troca de
+              clientes. A mesa deve ser limpa rapidamente e reorganizada para os
+              próximos clientes.
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <a
+              href="https://saipos.com/vigilancia-sanitaria/cronograma-de-limpeza-cozinha-restaurante"
+            >
+              <img
+                src="https://imgv2-1-f.scribdassets.com/img/document/413205870/original/72b7d456fe/1?v=1"
+                alt="Exemplo de cronograma de limpeza para cozinha de restaurante"
+              />
+            </a>
+            <p>
+              <strong>Cronograma de limpeza:</strong> Dicas de cronograma de
+              limpeza para cozinha de restaurante e ANVISA.
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <a
+              href="https://www.sodexobeneficios.com.br/blog/como-fazer-pos-venda-no-restaurante/"
+            >
+              <img
+                src="https://cms-cdn.saipos.com/assets/2024/06/17/sistema-de-vendas-para-restaurante-SAIPOS-sistema-para-restaurantes-1_uid_66705aaf2e5ae.png"
+                alt="Pós-Vendas"
+              />
+            </a>
+            <p>
+              <strong>Pós-vendas:</strong> Guia do pós-venda para restaurantes e
+              lanchonetes para fidelizar o cliente.
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <a href="https://blog.ceraflame.com.br/glossario-de-gastronomia/">
+              <img
+                src="https://static.mundoeducacao.uol.com.br/mundoeducacao/conteudo/images/restaurante(1).jpg"
+                alt="Glossário de gastronomia: termos que você precisa saber"
+              />
+            </a>
+            <p>
+              <strong>Glossário de gastronomia:</strong> Termos que você precisa
+              saber.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>&copy; 2024 - Treinamento para Equipe de Pizzaria</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
 </html>
