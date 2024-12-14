@@ -57,9 +57,32 @@ main {
   margin-bottom: 1rem;
 }
 
-.section.highlight {
-  background-color: #ffebcd;
-  transition: background-color 0.5s ease;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 1rem);
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: max(350px, 50vw);
+  height: max(180px, 50vw);
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-item p {
+  font-size: 0.9rem;
+  color: #555;
 }
 
 footer {
@@ -77,5 +100,15 @@ footer {
 
   nav ul li {
     text-align: center;
+  }
+
+  .gallery-item {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+    flex: 1 1 100%;
   }
 }
